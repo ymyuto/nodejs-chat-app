@@ -2,15 +2,8 @@ const express = require("express");
 const app = express();
 const http = require("http");
 const server = http.createServer(app);
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const io = require('socket.io')(server);
-// require('dotenv').config();
-// const mongoose = require("mongoose");
-// //データコネクション
-// mongoose.connect(
-//     process.env.DBURL
-//     ).then(()=>console.log("db connect"))
-//      .catch((err)=>console.log(err));
 
 require('dotenv').config();
 const mongoose = require("mongoose");
@@ -53,7 +46,7 @@ app.get("/",(req,res)=>{
     console.log(__dirname);
 });
 
-server.listen(process.env.PORT||PORT,()=>{
+server.listen(PORT,()=>{
     console.log("サーバーが起動しました");
 });
 
