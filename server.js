@@ -53,7 +53,7 @@ app.get("/",(req,res)=>{
     console.log(__dirname);
 });
 
-server.listen(PORT,()=>{
+server.listen(process.env.PORT||PORT,()=>{
     console.log("サーバーが起動しました");
 });
 
