@@ -1,0 +1,133 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;/*rem算出をしやすくするために*/
+  }
+
+  .content{
+    background-color:  #131312;
+    position: relative;
+    font-size: 3rem;
+    background-color: #131312;
+    max-width: 640px;
+    min-width: 360px;
+    min-height: 100vh;
+    /* position: relative; */
+    position: absolute;
+    width: 100%;
+    /* height: 100vh; */
+    /* top:50%; */
+    left:50%;
+    transform:translate(-50%,0%);
+}
+
+  header{
+    max-width: 640px;
+    min-width: 360px;
+    position: absolute;
+    left:50%;
+    transform:translate(-50%,0%);
+    position:fixed;
+    z-index:100;
+    top: 0; /* 基準の位置を画面の一番上に指定する */
+    width: 100%;
+    background-color:  #131312;
+    margin-top: 0px;
+    display: flex;
+    justify-content:flex-start;
+  }
+
+  .header-title{
+    display: flex;
+  }
+
+  .header-title a{
+    margin-left: 10px;
+  }
+
+  .header-title a img{
+    width: 28px;
+    height: 28px;
+  }
+
+  .header-title a:hover{
+    opacity: 0.9;
+  }
+
+  .header-title p{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f3f321;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
+
+  .inputText{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputText input{
+    width: 50%;
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+
+  .btn{
+    height: 80%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.0;
+    padding: 12px 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    /* vertical-align: middle; */
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+    background-color: aqua;
+    /* margin-left: 20px; */
+    margin-left: 7px;
+    text-align: right;
+  }
+
+  .btn:hover{
+    opacity: 0.9;
+  }
+
+  .space{
+    height: 45px;
+    margin: 0 0 0 0;
+  }
+
+  .display{
+    color:white;
+  }
+
+  .display h3{
+    text-align: center;
+
+  }
+
+  .form{
+    text-align: center;
+  }
+
+  .add{
+    display: inline-block;
+    font-size: 3rem;
+  }
+
+  .err{
+    color: red;
+  }
+

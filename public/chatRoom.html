@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatRoom.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <a onclick="location.href= '/myPage'"><img src="baseline_arrow_back_ios_white_24dp.png"></a>
+            <p id="roomName"></p>
+        </div>
+    </header>
+    <form id="form" action="">
+        <div class="inputText">
+            <textarea id="sendMessage" type="text" maxlength="100" rows="1" cols="60"autocomplete="off"></textarea>
+            <button id="sendButton" type="submit" class="btn submitbtn">送信</button>
+        </div>
+    </form>
+    <div class="content">
+        
+        <div class="space"></div>
+            <div Id="messages">
+                
+            </div>
+        <div class="spaceUnder"></div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="ChatRoomScript.js"></script>
+    
+    
+</body>
+</html>

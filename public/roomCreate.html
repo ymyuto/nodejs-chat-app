@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="roomCreate.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <a onclick="location.href= '/myPage'"><img src="baseline_arrow_back_ios_white_24dp.png"></a>
+            <p id="roomName">フレンド追加</p>
+        </div>
+    </header>
+    
+    <div class="content">
+        <div class="space"></div>
+        <form id="serchForm" action="">
+            <div class="inputText">
+                <input id="serchId" type="text" maxlength="10" placeholder="ユーザーID" autocomplete="off"></textarea>
+                <button id="serchButton" type="submit" class="btn">検索</button>
+            </div>
+        </form> 
+
+        <div class="display" id="name">
+        </div>
+        <form id="addForm" action="" class="form">
+        </form> 
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="createRoomScript.js"></script>
+</body>
+</html>
