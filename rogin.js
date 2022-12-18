@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const bodyParser = require('body-parser');
 const Users = require("./models/Users");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 require('dotenv').config();
 const mongoose = require("mongoose");
 
