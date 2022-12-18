@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 
 async function open (){
     await mongoose.connect(
-        process.env.DBURL
+        process.env.HEROKUDB||process.env.DBURL
         ).then(()=>console.log("db connect"))
          .catch((err)=>console.log(err));
 };
