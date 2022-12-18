@@ -65,7 +65,7 @@ router.post('/postMessage',async(req,res)=>{
         time:time,
     });
     await close();
-    res.status[200];
+    return res.status[200];
 });
 
 
