@@ -95,7 +95,7 @@ formDom.addEventListener("submit",async (e)=>{
 
             inputDOM.value = "";
 
-             axios.post("/chatRoom/postMessage",{
+            await axios.post("/chatRoom/postMessage",{
                 roomId:roomId,
                 content:content,
                 time:time,
