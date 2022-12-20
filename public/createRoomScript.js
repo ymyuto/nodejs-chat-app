@@ -63,7 +63,7 @@ serchFormDom.addEventListener('submit',async(e)=>{
 addFormDom.addEventListener("submit",async()=>{
     if(addId.length == 0)return;
     try{
-        await axios.post('/roomCreate/direct',{
+        const roomCreate = await axios.post('/roomCreate/direct',{
             myId:GetCookie_Value("id"),
             friendId:addId
         });

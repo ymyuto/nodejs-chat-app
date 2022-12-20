@@ -102,8 +102,6 @@ formDom.addEventListener("submit",async (e)=>{
                 myId:myId
             });
 
-            console.log(message);
-
             console.log("end");
 
         }catch(err){

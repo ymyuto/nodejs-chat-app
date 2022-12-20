@@ -34,7 +34,7 @@ formDom.addEventListener("submit",async (e)=>{
     if(inputIdText && inputNameText && inputPasswordText){
         console.log("add data");
         try {
-            await axios.post("/register",{
+            const register = await axios.post("/register",{
                 id:inputIdText,
                 name:inputNameText,
                 password:inputPasswordText,
