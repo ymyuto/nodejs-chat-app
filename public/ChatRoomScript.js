@@ -95,12 +95,14 @@ formDom.addEventListener("submit",async (e)=>{
 
             inputDOM.value = "";
 
-            await axios.post("/chatRoom/postMessage",{
+            const message = await axios.post("/chatRoom/postMessage",{
                 roomId:roomId,
                 content:content,
                 time:time,
                 myId:myId
             });
+
+            console.log(message);
 
             console.log("end");
 

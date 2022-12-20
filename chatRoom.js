@@ -65,6 +65,7 @@ router.post('/postMessage',async(req,res)=>{
         time:time,
     });
     await close();
+    console.log("kokomadekita");
     res.status(200).json(messageDate);
 });
 
