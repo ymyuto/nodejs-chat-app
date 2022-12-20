@@ -57,7 +57,7 @@ router.post('/postMessage',async(req,res)=>{
         time:time,
     });
 
-    await Message.create({
+    const messageDate = await Message.create({
         roomId:roomId,
         content:content,
         sendId:sendId,
@@ -65,7 +65,7 @@ router.post('/postMessage',async(req,res)=>{
         time:time,
     });
     await close();
-    res.status(200);
+    res.status(200).json(messageDate);
 });
 
 
