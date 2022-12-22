@@ -67,7 +67,9 @@ addFormDom.addEventListener("submit",async()=>{
             myId:GetCookie_Value("id"),
             friendId:addId
         });
+        window.alert("追加しました。");
     }catch(err){
         console.log(err);
+        window.alert(err.response.data[0].message);
     };
 })
