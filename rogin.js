@@ -57,15 +57,16 @@ router.get("/myData",async(req,res)=>{
                 id:user[0].id,
                 name:user[0].name,
             });
-        }
+        }else{
+            return res.status(400).json([
+                {
+                    message:"パスワードが間違っています。",
+                },
+            ]);
+        };
       })
       .catch(error => {
         console.log(error);
-        return res.status(400).json([
-            {
-                message:"パスワードが間違っています。",
-            },
-        ]);
       });
 
 });
